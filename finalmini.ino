@@ -5,7 +5,6 @@
 #include <SoftwareSerial.h>
 #include <DHT.h>
 
-// Define Pins
 #define RX_PIN 12  // SIM800C RX 
 #define TX_PIN 11  // SIM800C TX 
 #define DHTPIN 2   // DHT11 Sensor connected to Pin 2
@@ -30,7 +29,7 @@ void sendSMS(String message) {
     Serial.println("Sending SMS...");
     sim800c.println("AT+CMGF=1");  
     delay(100);
-    sim800c.println("AT+CMGS=\"+919489361959\"");  
+    sim800c.println("AT+CMGS=\"+PHONE NUMBER\"");  
     delay(100);
     sim800c.print(message);
     delay(100);
