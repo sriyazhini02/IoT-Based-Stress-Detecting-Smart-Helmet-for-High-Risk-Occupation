@@ -95,5 +95,4 @@ if(acceleration > FALL_THRESHOLD){
 **Sri Yazhini**
 Final Year Engineering Student
 
----
-Do you want me to do that next?
+
